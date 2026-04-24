@@ -45,11 +45,11 @@ body {
 }
 
 .left {
-    width: 60%;
+    flex: 3;
 }
 
 .right {
-    width: 40%;
+    flex: 2;
 }
 
 .media {
@@ -84,6 +84,7 @@ body {
     border-radius: 20px;
     font-size: 16px;
     font-weight: 500;
+    align-self: flex-start;
 }
 
 .divider {
@@ -177,9 +178,7 @@ body {
 
 .overlay {
     position: absolute;
-    top: 40px;
-    bottom: 90px;
-    left: 10px;
+    inset: 40px auto 90px 10px;
 
     width: 66%;
     background: white;
@@ -222,7 +221,6 @@ body {
 .back-btn svg {
     width: 40px;
     height: 40px;
-    fill: white;
 }
 
 .publish {
@@ -241,6 +239,10 @@ body {
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
+
+    border: none;          
+    outline: none;        
+    appearance: none; 
 }
 
 .menu-btn,
